@@ -1,0 +1,1 @@
+export const skill = ["Python", "Java", "C++", "C", "JavaScript", "Express.js", "React.js" , "Django", "MongoDB", "PostgreSql", "AWS", "Node.js", "HTML", "CSS"];
