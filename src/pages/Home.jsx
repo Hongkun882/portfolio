@@ -17,7 +17,7 @@ function Home() {
           <a className="btn bg-base-100 m-3" href="https://github.com/Hongkun882?tab=repositories">
             <FaGithub /> Github
           </a>
-          <a className="btn border border-gray-500 bg-black text-gray-300 m-3" href="https://myportfolio2391.s3.us-east-2.amazonaws.com/Resume.pdf">
+          <a className="btn border border-gray-500 bg-black text-gray-300 m-3" href="https://portfolio2391.s3.us-east-2.amazonaws.com/Resume.pdf">
            <IoDocumentTextOutline/> Resume
           </a>
         </div>
