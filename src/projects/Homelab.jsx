@@ -6,7 +6,7 @@ function Homelab() {
             <h1 className='text-center text-2xl'><b>VM ware Homelab</b></h1>
             <figure>
                 <img
-                    src={"./asset/project/homelab.png"}
+                    src={"./asset/project/homelab.PNG"}
                     alt="Project Image"
                     className="m-3 min-h-[200px] min-w-[400px] max-w-[400px] max-h-[500px]"
                 />
