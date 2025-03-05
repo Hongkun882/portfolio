@@ -5,11 +5,11 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function ProjectItem({ info }) {
   const { img, name, description, tags, url, github } = info;
   return (
-    <div className="flex mb-3 w-full md:flex-row flex-col border border-gray-300 rounded-md bg-gray-100">
+    <div className="flex mb-3 min-w-[500px] max-w-[900px] md:flex-row flex-col border border-gray-300 rounded-md bg-gray-100 max-h-[400px]">
       <figure>
         <img
           src={img}
-          alt="Movie"
+          alt="Project Image"
           className="m-3 min-h-[200px] min-w-[400px] max-w-[400px] max-h-[500px]"
         />
       </figure>

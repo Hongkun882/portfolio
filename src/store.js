@@ -1,9 +1,11 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
 import { ProjectReducer } from './reducers/ProjectReducer'
+import { PageReducer } from './reducers/PageReducer'
 
 
 const reducer = combineReducers({
-    projectChoice: ProjectReducer
+    projectChoice: ProjectReducer,
+    pages:PageReducer
 })
 
 

@@ -11,15 +11,17 @@ export const projectData = [{
 {
     name: "Ticket Support System",
     img: "./asset/project/Autograder.png",
-    description: "Web App builded with MERN stack that allow students to post their questions when in doubts, and teacher to answer fellow students questions. Students will be in a FIFO queue to wait for their question to be answered, and they could view their queue status and availbity of teachers in real time",
+    description: "Ticket System builded with MERN stack that allow students to post their questions when in doubts, teachers to answer fellow students questions, and chatting with each other in real time.",
     tags: ["React.js", "Express.js", "Node.js", "MongoDB"],
     url: "https://autograder-tawny.vercel.app/",
     github: "https://github.com/Hongkun882/autograder"
 },
+
+
 {
     name: "FlightRadar",
     img: "./asset/project/FlightRadar.png",
-    description: "Flight Tracking app that display all flights based on the scale of the map with OpenSky-Network Restful API. To make it 'Real-time'. It will update the postions of aircrafts every two second using Turf.js to calculate the Geo location based on the data from OpenSky-Network. Users can view the data of every aircraft",
+    description: "Flight Tracking app that display all flights based on the scale of the map with OpenSky-Network Restful API. Users can view the info of aircrafts and airports in the map ",
     tags: ["React.js", "Leaflet.js", "Node.js"],
     url: "https://flight-tracking-snowy.vercel.app/",
     github: "https://github.com/Hongkun882/flight_tracking"
