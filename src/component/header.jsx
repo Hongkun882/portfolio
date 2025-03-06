@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header className="flex justify-center w-full fixed z-10">
-      <div role="tablist" class="tabs tabs-md tabs-boxed w-3/4 min-w-[550px] max-w-[750px]">
+      <div role="tablist" className="tabs tabs-md tabs-boxed w-3/4 min-w-[550px] max-w-[750px]">
         <a
           role="tab"
           className={`tab ${tab === "Home" ? "tab-active" : ""} `}

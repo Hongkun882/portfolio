@@ -9,7 +9,7 @@ function Experience() {
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">
         <h1 className="text-4xl text-center">Experience</h1>
 
-        <div class="border border-gray-400 bg-gray-100 rounded-md w-3/4 p-3 mt-3">
+        <div className="border border-gray-400 bg-gray-100 rounded-md w-3/4 p-3 mt-3">
           <div className="flex w-full justify-between">
             <h2 className="text-lg">
               <strong>Frontend Developer Intern</strong>{" "}

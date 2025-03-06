@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { projectData } from "../projectdata/webprojectdetails";
+import { academicProjects } from "../projectdata/academicProject"
 import ProjectItem from "../component/ProjectItem"
 import Pagination from '../component/Pagination';
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,24 +7,26 @@ import { setPage } from '../actions/PageAction';
 
 
 
-function WebProject() {
+function AcademicProject() {
 
     const dispatch = useDispatch()
-    
+
     const numItems = 3
-    const {currentPage} = useSelector(state => state.WebPages)
-    
-    const maxPage = Math.ceil(projectData.length / numItems);
-    useEffect(()=>{
+    const { currentPage } = useSelector(state => state.AcdPages)
+
+    const maxPage = Math.ceil(academicProjects.length / numItems);
+
+    useEffect(() => {
+        
+            dispatch(setPage("Acd", 1, maxPage));
+        
+
+    }, [dispatch, maxPage, currentPage]);
 
 
-        dispatch(setPage("Web",1,maxPage))
-    },[dispatch, maxPage])
-
-    
     const lastInx = numItems * currentPage
-   const firstInx = lastInx - numItems;
-   const currentItems = projectData.slice(firstInx, lastInx);
+    const firstInx = lastInx - numItems;
+    const currentItems = academicProjects.slice(firstInx, lastInx);
     return (
         <div className='flex flex-col h-full min-h-screen items-center'>
             <div className=" flex flex-col justify-center items-center h-full mt-3" >
@@ -34,14 +36,14 @@ function WebProject() {
                     ))
                 }
 
-                
+
 
             </div>
-            <Pagination projectChoice={"Web"}/>
+            <Pagination projectChoice={"Acd"} />
         </div>
 
 
     )
 }
 
-export default WebProject
+export default AcademicProject

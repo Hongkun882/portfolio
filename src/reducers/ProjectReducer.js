@@ -5,10 +5,12 @@ export const ProjectReducer = (state = "Web", action)=>{
             return "Lab";
 
         case "Acd":
-            return "Acd"
+            return "Acd";
 
+        case "Web":
+            return "Web";
         default:
-            return "Web"
+            return state
     }
 
 }

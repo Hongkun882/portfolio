@@ -4,6 +4,7 @@ import TableContent from "../component/TableContent";
 import { useSelector } from "react-redux";
 import WebProject from "../projects/WebProject";
 import Homelab from "../projects/Homelab";
+import AcademicProject from "../projects/AcademicProject";
 
 
 function Project() {
@@ -20,7 +21,7 @@ function Project() {
         
 
           {
-            projectChoice === "Web" ? <WebProject/>: projectChoice === "Lab" ? <Homelab/> : <h1>N/A</h1>
+            projectChoice === "Web" ? <WebProject/>: projectChoice === "Lab" ? <Homelab/> : <AcademicProject/>
           }
 
         

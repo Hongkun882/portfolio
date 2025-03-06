@@ -1,21 +1,17 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
 import { ProjectReducer } from './reducers/ProjectReducer'
-import { PageReducer } from './reducers/PageReducer'
+import { AcdPageReducer, WebPageReducer } from './reducers/PageReducer'
 
 
 const reducer = combineReducers({
     projectChoice: ProjectReducer,
-    pages:PageReducer
+    AcdPages:AcdPageReducer,
+    WebPages:WebPageReducer
 })
 
 
-const initialState = {
-    projectChoice: "Web"
-}
-
 const store = configureStore({
     reducer,
-    initialState
 
 })
 

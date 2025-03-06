@@ -6,7 +6,14 @@ export const changePage = (val) => (dispatch) => {
 
 }
 
-export const setPage = ( minPage, maxPage ) => (dispatch) => {
-    dispatch({ type: "SetPage", payload: { minPage, maxPage } })
+export const setPage = ( type, minPage, maxPage ) => (dispatch) => {
+    
+    if (type === "Acd"){
+        
+        dispatch({ type: "AcdSetPage", payload: { minPage, maxPage } })
+    }else{
+        dispatch({ type: "WebSetPage", payload: { minPage, maxPage } })
+    }
+    
 
 }
