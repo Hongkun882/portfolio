@@ -14,9 +14,9 @@ function TableContent() {
 
     return (
         <div role='tablist' className="tabs tabs-boxed" >
-            <button role='tab' className={`tab ${projectChoice === "Web" ? 'tab-active' : ""}`} onClick={(e) => { handleClick("Web") }}>Web Devlopment</button>
-            <button role='tab' className={`tab ${projectChoice === "Lab" ? 'tab-active' : ""}`} onClick={(e) => { handleClick("Lab") }}>Home Lab</button>
-            <button role='tab' className={`tab ${projectChoice === "Acd" ? 'tab-active' : ""}`} onClick={(e) => { handleClick("Acd") }}>Academic Projects</button>
+            <button role='tab' className={`tab ${projectChoice === "Web" ? 'tab-active' : ""} hover:bg-slate-300`} onClick={(e) => { handleClick("Web") }}>Web Devlopment</button>
+            <button role='tab' className={`tab ${projectChoice === "Lab" ? 'tab-active' : ""} hover:bg-slate-300`} onClick={(e) => { handleClick("Lab") }}>Home Lab</button>
+            <button role='tab' className={`tab ${projectChoice === "Acd" ? 'tab-active' : ""} hover:bg-slate-300`} onClick={(e) => { handleClick("Acd") }}>Academic Projects</button>
         </div>
     )
 }

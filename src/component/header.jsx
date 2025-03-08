@@ -12,7 +12,7 @@ function Header() {
       <div role="tablist" className="tabs tabs-md tabs-boxed w-3/4 min-w-[550px] max-w-[750px]">
         <a
           role="tab"
-          className={`tab ${tab === "Home" ? "tab-active" : ""} `}
+          className={`tab ${tab === "Home" ? "tab-active" : ""} hover:bg-slate-300`}
           href="/#home"
           onClick={(e) => handleClick("Home")}
         >
@@ -20,7 +20,7 @@ function Header() {
         </a>
         <a
           role="tab"
-          className={`tab ${tab === "Project" ? "tab-active" : ""}`}
+          className={`tab ${tab === "Project" ? "tab-active" : ""} hover:bg-slate-300`}
           href="/#project"
           onClick={() => {
             handleClick("Project");
@@ -30,7 +30,7 @@ function Header() {
         </a>
         <a
           role="tab"
-          className={`tab ${tab === "Skill" ? "tab-active" : ""}`}
+          className={`tab ${tab === "Skill" ? "tab-active" : ""} hover:bg-slate-300`}
           href="/#skill"
           onClick={() => {
             handleClick("Skill");
@@ -40,7 +40,7 @@ function Header() {
         </a>
         <a
           role="tab"
-          className={`tab ${tab === "Experience" ? "tab-active" : ""}`}
+          className={`tab ${tab === "Experience" ? "tab-active" : ""} hover:bg-slate-300`}
           href="/#experience"
           onClick={() => {
             handleClick("Experience");
@@ -50,7 +50,7 @@ function Header() {
         </a>
         <a
           role="tab"
-          className={`tab ${tab === "Education" ? "tab-active" : ""}`}
+          className={`tab ${tab === "Education" ? "tab-active" : ""} hover:bg-slate-300`}
           href="/#education"
           onClick={() => {
             handleClick("Education");
