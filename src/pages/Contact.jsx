@@ -1,10 +1,11 @@
 import React from "react";
+import HoverEffect from "../component/dummy";
 
 function Contact() {
   return (
     <section
       className="w-full min-h-screen flex justify-center pt-12"
-      id="contact"
+      id="Contact"
     >
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">
         <h1 className="text-4xl text-center">Contact Me</h1>
@@ -12,6 +13,8 @@ function Contact() {
         <h3>
           Please Contact me directly at <u>hongkunguan@gmail.com</u>
         </h3>
+
+        <HoverEffect/>
       </div>
     </section>
   );

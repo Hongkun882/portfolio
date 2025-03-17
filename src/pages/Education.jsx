@@ -4,7 +4,7 @@ function Education() {
   return (
     <section
       className="w-full h-auto flex justify-center pt-12"
-      id="education"
+      id="Education"
     >
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">
         <h1 className="text-4xl text-center">My Eduction</h1>

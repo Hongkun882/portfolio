@@ -10,7 +10,7 @@ function ProjectItem({ info }) {
         <img
           src={img}
           alt="Project Image"
-          className="m-3 min-h-[200px] min-w-[400px] max-w-[400px] max-h-[500px]"
+          className="m-3 min-h-[200px] min-w-[400px] max-w-[400px] max-h-[300px]"
         />
       </figure>
       <div className="flex flex-col">

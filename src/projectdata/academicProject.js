@@ -14,7 +14,7 @@ export const academicProjects = [
     {
         name: "Food Recipes Rating Predicting Model",
         img: "./asset/project/food.jpg",
-        description: "Predictive Model that predicts a food recipe's rating by examining the review's language. The model is built upon sentiment analysis by using ridege regression from the linear model in scikit-learn. Achieved 1.43 MSE which outperformed the baseline model with 1.52 MSE",
+        description: "Predictive Model that predicts a food recipe's rating by examining the review's language by using ridege regression from the linear model in scikit-learn. Achieved 1.43 MSE which outperformed the baseline model with 1.52 MSE",
         tags: ["Python"],
         url: "https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions",
         github: "https://github.com/Hongkun882/Food-Receipt",

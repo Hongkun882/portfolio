@@ -6,7 +6,7 @@ function Home() {
   return (
     <section
       className="w-full h-screen flex justify-center items-center bg-slate-800 mb-5 min-h-[700px]"
-      id="home"
+      id="Home"
     >
       <div className="w-2/3 flex min-w-[700px]">
         <div className="avatar m-3 ">

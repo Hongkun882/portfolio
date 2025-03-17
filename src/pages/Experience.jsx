@@ -4,7 +4,7 @@ function Experience() {
   return (
     <section
       className="w-full h-auto flex justify-center p-12 mt-3"
-      id="experience"
+      id="Experience"
     >
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">
         <h1 className="text-4xl text-center">Experience</h1>
