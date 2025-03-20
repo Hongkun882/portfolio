@@ -1,31 +1,43 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 function Header() {
   const [tab, setTab] = useState("Home");
-
   const handleClick = (val) => {
     setTab(val);
   };
 
-  const navlist = ["Home","Project", "Skill", "Experience", "Education","Contact"];
+  const navlist = ["Home", "Project", "Skill", "Experience", "Education", "Contact"];
   return (
-    <header className="w-full fixed z-10 bg-white">
-      <div className="container mx-auto flex justify-between items-center p-2">
+    <header className="w-full fixed z-10 items-center flex justify-center">
+
+      <div role="tablist" className="tabs tabs-boxed w-auto px-3 flex flex-wrap justify-center gap-2">
         {navlist.map((item) => (
 
-<a
-          
-          className={`tab ${tab === item ? "tab-active" : ""} hover:bg-slate-300`}
-          href={`/#${item}`}
-          onClick={(e) => handleClick(item)}
-        >
-          {item}
-        </a>
+          <motion.a
+            role="tab"
+            className={`tab mx-1`}
+            href={`/#${item}`}
+            onClick={(e) => handleClick(item)}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{scale: 0.9}}
+            transition={{ duration: 0.3 }}
+          >
+            {item}
+            {tab === item && (
+              <motion.div
+                className="absolute left-0 right-0 bottom-0 h-1 bg-slate-500 rounded-md mt-1"
+                layoutId="underline"
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 0.4 }}
+              />
+            )}
+          </motion.a>
 
         ))}
-        
-        
+
       </div>
+
     </header>
   );
 }
