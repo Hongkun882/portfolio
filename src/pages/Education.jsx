@@ -3,7 +3,7 @@ import React from "react";
 function Education() {
   return (
     <section
-      className="w-full h-auto flex justify-center pt-12"
+      className="w-full h-screen flex justify-center pt-12"
       id="Education"
     >
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">
