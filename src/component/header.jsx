@@ -1,12 +1,73 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 function Header() {
+
+
   const [tab, setTab] = useState("Home");
   const handleClick = (val) => {
     setTab(val);
   };
 
-  const navlist = ["Home", "Project", "Skill", "Experience", "Education", "Contact"];
+  const navlist = useMemo(
+    () => ["Home", "Project", "Skill", "Experience", "Education", "Contact"],
+    []
+  );
+
+  // useEffect(() => {
+
+  //   const sections = navlist.map((item) => document.getElementById(item));
+    
+  //   const observerOption = {
+
+  //     root: null,
+  //     rootMargin: "-40% 0px -55% 0px",
+  //     threshold: 0.3
+  //   }
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         console.log(entry.target.id)
+  //         setTab(entry.target.id)
+  //       }
+  //     })
+  //   }, observerOption)
+
+  //   sections.forEach((section) => {
+  //     if (section) {
+        
+  //       observer.observe(section)
+  //     }
+  //   });
+
+
+  // }, [])
+
+  useEffect(() => {
+    const sections = navlist
+      .map((item) => document.getElementById(item))
+      .filter((section) => section !== null);
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "-20% 0px -60% 0px", // Adjust based on your header height
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTab(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, [navlist]);
+
   return (
     <header className="w-full fixed z-10 items-center flex justify-center">
 
@@ -15,11 +76,11 @@ function Header() {
 
           <motion.a
             role="tab"
-            className={`tab mx-1`}
+            className={`tab mx-1 md:text-base flex-1 text-center`}
             href={`/#${item}`}
             onClick={(e) => handleClick(item)}
             whileHover={{ scale: 1.2 }}
-            whileTap={{scale: 0.9}}
+            whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.3 }}
           >
             {item}

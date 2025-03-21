@@ -3,7 +3,7 @@ import React from "react";
 function Experience() {
   return (
     <section
-      className="w-full h-auto flex justify-center p-12 mt-3"
+      className="w-full h-screen flex justify-center p-12 mt-3"
       id="Experience"
     >
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">

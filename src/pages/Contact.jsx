@@ -14,7 +14,7 @@ function Contact() {
           Please Contact me directly at <u>hongkunguan@gmail.com</u>
         </h3>
 
-        <HoverEffect/>
+        
       </div>
     </section>
   );
