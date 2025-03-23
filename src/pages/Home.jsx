@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <section
-      className="w-full h-screen flex justify-center items-center  mb-5 min-h-[700px] relative"
+      className="w-full h-screen flex justify-center items-center min-h-[700px] relative mb-3"
       id="Home"
       style={{
 

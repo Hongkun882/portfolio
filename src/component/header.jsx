@@ -9,7 +9,7 @@ function Header() {
   };
 
   const navlist = useMemo(
-    () => ["Home", "Project", "Skill", "Experience", "Education", "Contact"],
+    () => ["Home", "Projects", "Skills","Degree & Certs", "Experience",  "Contact"],
     []
   );
 
@@ -42,12 +42,12 @@ function Header() {
   return (
     <header className="w-full fixed z-10 items-center flex justify-center mt-4">
 
-      <div role="tablist" className="tabs tabs-boxed w-auto px-3 flex flex-wrap justify-center gap-2">
+      <div role="tablist" className="tabs tabs-boxed px-3 flex flex-wrap justify-center gap-2">
         {navlist.map((item) => (
 
           <motion.a
             role="tab"
-            className={`tab mx-1 md:text-base flex-1 text-center`}
+            className={`tab mx-1 md:text-base flex-1 text-center whitespace-nowrap`}
             href={`/#${item}`}
             onClick={(e) => handleClick(item)}
             whileHover={{ scale: 1.2 }}
