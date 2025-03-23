@@ -3,10 +3,10 @@ import React from "react";
 function Education() {
   return (
     <section
-      className="w-full h-screen flex justify-center pt-12"
+      className="w-full h-screen flex justify-center pt-12 bg-slate-800"
       id="Education"
     >
-      <div className=" flex flex-col w-1/2 min-w-[700px] items-center">
+      <div className=" flex flex-col w-1/2 min-w-[700px] items-center ">
         <h1 className="text-4xl text-center">My Eduction</h1>
         <div className="flex flex-row border border-gray-400 bg-gray-100 rounded-md w-3/4 m-3">
           <img
