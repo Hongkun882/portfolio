@@ -3,7 +3,7 @@ import { FaCircleDot } from "react-icons/fa6";
 function Experience() {
   return (
     <section
-      className="w-full h-screen flex justify-center p-12 mt-3 text-white"
+      className="w-full min-h-screen flex justify-center p-12 mt-3 text-white h-auto"
       id="Experience"
       style={{
         backgroundImage: "url('./asset/stars.gif')"

@@ -4,7 +4,7 @@ import { IoIosSend } from "react-icons/io";
 function Contact() {
   return (
     <section
-      className="w-full min-h-screen flex justify-center pt-12"
+      className="w-full min-h-screen flex justify-center pt-12 h-auto"
       id="Contact"
     >
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">

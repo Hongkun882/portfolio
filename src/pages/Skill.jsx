@@ -6,7 +6,7 @@ function Skill() {
 
   const {programming, OS, Tool,Network} =skills
   return (
-    <section className="w-full h-screen flex justify-center text-white" id="Skills" style={{
+    <section className="w-full min-h-screen flex justify-center text-white h-auto" id="Skills" style={{
 
       backgroundImage: "url('./asset/stars.gif')"
     }} >
