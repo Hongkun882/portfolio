@@ -10,7 +10,7 @@ function Education() {
         <h1 className="text-4xl text-center">Degree</h1>
         <div className="flex flex-row border border-gray-400 bg-gray-100 rounded-md w-3/4 m-3">
           <img
-            src="./asset/ucsd.svg"
+            src="./asset/certs/ucsd.svg"
             alt="ucsd"
             style={{ height: "150px", width: "150px" }}
             className="m-4"
@@ -36,7 +36,8 @@ function Education() {
         <h1 className="text-4xl text-center">Certification</h1>
         <div className="flex flex-row border border-gray-400 bg-gray-100 rounded-md w-3/4 m-3">
           <img
-            src="./asset/comptiaA.png"
+            src="./asset/certs/comptiaA.png"
+            
             alt="ucsd"
             style={{ height: "150px", width: "200px" }}
             className="m-4"
@@ -56,7 +57,7 @@ function Education() {
 
         <div className="flex flex-row border border-gray-400 bg-gray-100 rounded-md w-3/4 m-3">
           <img
-            src="./asset/networkplus.png"
+            src="./asset/certs/networkplus.png"
             alt="ucsd"
             style={{ height: "150px", width: "200px" }}
             className="m-4"
