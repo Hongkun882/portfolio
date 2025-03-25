@@ -63,7 +63,7 @@ function Home() {
             </motion.a>
             <motion.a
               className="btn border border-gray-500 bg-black text-gray-300 m-3"
-              href="https://portfolio2391.s3.us-east-2.amazonaws.com/Resume.pdf"
+              href="./asset/resume_IT.pdf"
               initial={{ opacity: 0, y: 750 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 2 }}
