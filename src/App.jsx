@@ -6,8 +6,10 @@ import Skill from "./pages/Skill";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Contact from "./pages/Contact";
+import { ToastContainer } from "react-toastify";
 
 function App() {
+  
   return (
     <div className="app relative font-mono">
       <Header />
@@ -20,6 +22,7 @@ function App() {
         <Experience />
         <Contact/>
       </main>
+      <ToastContainer/>
     </div>
   );
 }
