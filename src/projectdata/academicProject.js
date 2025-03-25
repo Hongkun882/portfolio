@@ -2,7 +2,7 @@ export const academicProjects = [
 
     {
         name: "Diary App",
-        img: "./asset/project/diary.png",
+        img: "./asset/project/diary.PNG",
         description: "Basic CRUD app that builded with HTML/CSS and Javascript. Users can express their feelings without having to worry about what others think by creating their own posts",
         tags: ["JavaScript", "HTML", "CSS"],
         url: "https://cse110-fa22-group7.github.io/cse110-fa22-group7-project/source/main.html",
@@ -13,7 +13,7 @@ export const academicProjects = [
     },
     {
         name: "Food Recipes Rating Predicting Model",
-        img: "./asset/project/food.jpg",
+        img: "./asset/project/Food.jpg",
         description: "Predictive Model that predicts a food recipe's rating by examining the review's language by using ridege regression from the linear model in scikit-learn. Achieved 1.43 MSE which outperformed the baseline model with 1.52 MSE",
         tags: ["Python"],
         url: "https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions",
@@ -36,7 +36,7 @@ export const academicProjects = [
     },
     {
         name: "Accumlator Processor",
-        img: "./asset/project/accumulator.png",
+        img: "./asset/project/accumulator.PNG",
         description: "Design an Accumlator that takes 9-bit instrustions to encrypt and decrypt a message using ARM assembly. The first 4 bits are for operation, and the remaining bits are for registers.",
         tags: ["System verilog"],
         groupSize: 3,
