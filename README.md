@@ -4,7 +4,7 @@ Welcome to my personal portfolio! Here, you'll find my projects, skills, and exp
 ## 🔗 Live Demo  
 Check out my portfolio: [hongkunguan.online](https://hongkunguan.online)  
 
-![Portfolio Screenshot](./asset/demo.PNG)  
+![Portfolio Screenshot](/asset/demo.PNG)  
 
 ## ⚡ Features  
 - Responsive design  
