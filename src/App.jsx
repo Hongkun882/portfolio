@@ -7,11 +7,12 @@ import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Contact from "./pages/Contact";
 import { ToastContainer } from "react-toastify";
+import Footer from "./component/Footer";
 
 function App() {
   
   return (
-    <div className="app relative font-mono">
+    <div className="app relative font-semibold">
       <Header />
       <main className="flex flex-col ">
         <Home />
@@ -22,6 +23,7 @@ function App() {
         <Experience />
         <Contact/>
       </main>
+      <Footer/>
       <ToastContainer/>
     </div>
   );

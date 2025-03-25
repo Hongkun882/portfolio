@@ -4,8 +4,15 @@ function Header() {
 
 
   const [tab, setTab] = useState("Home");
-  const handleClick = (val) => {
+  const handleClick = (e,val) => {
+    e.preventDefault();
     setTab(val);
+
+    const section = document.getElementById(val);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    
   };
 
   const navlist = useMemo(
@@ -13,6 +20,7 @@ function Header() {
     []
   );
 
+  
   useEffect(() => {
     const sections = navlist
       .map((item) => document.getElementById(item))
@@ -49,7 +57,7 @@ function Header() {
             role="tab"
             className={`tab mx-1 md:text-base flex-1 text-center whitespace-nowrap`}
             href={`/#${item}`}
-            onClick={(e) => handleClick(item)}
+            onClick={(e) => handleClick(e,item)}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.3 }}
