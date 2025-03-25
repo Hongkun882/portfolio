@@ -9,7 +9,7 @@ function ProjectItem({ info }) {
       <figure>
         <img
           src={img}
-          alt="Project Image"
+          alt="Project"
           className="m-3 min-h-[200px] min-w-[400px] max-w-[400px] max-h-[300px]"
         />
       </figure>

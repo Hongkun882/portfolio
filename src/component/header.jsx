@@ -9,38 +9,9 @@ function Header() {
   };
 
   const navlist = useMemo(
-    () => ["Home", "Project", "Skill", "Experience", "Education", "Contact"],
+    () => ["Home", "Projects", "Skills","Degree & Certs", "Experience",  "Contact"],
     []
   );
-
-  // useEffect(() => {
-
-  //   const sections = navlist.map((item) => document.getElementById(item));
-    
-  //   const observerOption = {
-
-  //     root: null,
-  //     rootMargin: "-40% 0px -55% 0px",
-  //     threshold: 0.3
-  //   }
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         console.log(entry.target.id)
-  //         setTab(entry.target.id)
-  //       }
-  //     })
-  //   }, observerOption)
-
-  //   sections.forEach((section) => {
-  //     if (section) {
-        
-  //       observer.observe(section)
-  //     }
-  //   });
-
-
-  // }, [])
 
   useEffect(() => {
     const sections = navlist
@@ -69,14 +40,14 @@ function Header() {
   }, [navlist]);
 
   return (
-    <header className="w-full fixed z-10 items-center flex justify-center">
+    <header className="w-full fixed z-10 items-center flex justify-center mt-4">
 
-      <div role="tablist" className="tabs tabs-boxed w-auto px-3 flex flex-wrap justify-center gap-2">
+      <div role="tablist" className="tabs tabs-boxed px-3 flex flex-wrap justify-center gap-2">
         {navlist.map((item) => (
 
           <motion.a
             role="tab"
-            className={`tab mx-1 md:text-base flex-1 text-center`}
+            className={`tab mx-1 md:text-base flex-1 text-center whitespace-nowrap`}
             href={`/#${item}`}
             onClick={(e) => handleClick(item)}
             whileHover={{ scale: 1.2 }}
