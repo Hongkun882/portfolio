@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { IoIosSend } from "react-icons/io";
 import emailjs from '@emailjs/browser'
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
+
 function Contact() {
 
   const [formdata, setFormData] = useState({
@@ -55,11 +57,11 @@ function Contact() {
           Please Contact me directly at <u>hongkunguan@gmail.com</u>
         </h3>
 
-        <form action="" className="reletive w-full flex flex-col items-center h-4/5" onSubmit={handleSubmit}>
+        <form action="" className="reletive w-2/3 flex flex-col items-center h-4/5" onSubmit={handleSubmit}>
           <input
             type="email"
             placeholder="Enter Your Email"
-            className="w-2/3 input validator border-2 border-black border-solid my-5 text-xl"
+            className="w-full input validator border-2 border-black border-solid my-5 text-xl"
             value={formdata.email}
             name="email"
             onChange={handleChange}
@@ -69,7 +71,7 @@ function Contact() {
           <textarea
             name="message"
             value={formdata.message}
-            className="textarea border-2 border-black w-2/3 h-1/4 my-4 text-xl"
+            className="textarea border-2 border-black w-full h-1/4 my-4 text-xl"
             placeholder="Say Someting"
             onChange={handleChange}
             required>
@@ -77,10 +79,16 @@ function Contact() {
           </textarea>
 
 
-          <button className={`btn btn-primary text-xl ${loading ? "disabled": ""}`}>
-            <IoIosSend />
+          <motion.button 
+            className={`btn btn-primary text-xl ${loading ? "disabled": ""} self-start`}
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }}
+          >
+            
+              <IoIosSend />
+            
             <p>Send</p>
-          </button>
+          </motion.button>
         </form>
       </div>
     </section>
