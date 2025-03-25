@@ -37,6 +37,7 @@ function Education() {
         <div className="flex flex-row border border-gray-400 bg-gray-100 rounded-md w-3/4 m-3">
           <img
             src="./asset/certs/comptiaA.png"
+            
             alt="ucsd"
             style={{ height: "150px", width: "200px" }}
             className="m-4"
