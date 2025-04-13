@@ -6,7 +6,7 @@ function Experience() {
       className="w-full min-h-screen flex justify-center p-12 mt-3 text-white h-auto"
       id="Experience"
       style={{
-        backgroundImage: "url('./asset/stars.gif')"
+        backgroundImage: "url('./asset/stars.gif')",
       }}
     >
       <div className=" flex flex-col w-1/2 min-w-[700px] items-center">
@@ -19,8 +19,10 @@ function Experience() {
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">03/2020 - 04/2020</time>
               <div className="text-lg font-black">Tech Support Volunteer</div>
-              Worked as a Tech Support Volunteer that provided technical support for elderly people at affordable housing in
-              using applications in cell phone such as checking emails, video calling platforms, and messaging.
+              Worked as a Tech Support Volunteer that provided technical support
+              for elderly people at affordable housing in using applications in
+              cell phone such as checking emails, video calling platforms, and
+              messaging.
             </div>
             <hr />
           </li>
@@ -31,30 +33,34 @@ function Experience() {
             </div>
             <div className="timeline-end md:mb-10">
               <time className="font-mono italic">01/2024 - 04/2024</time>
-              <div className="text-lg font-black">Frontend Developer</div>
+              <div className="text-lg font-black">Desktop Support</div>
 
-              <p>Worked as a contractor for a Advertising company to create a company website with other develpers.</p>
+              <p>
+                Worked as a desktop support for a local advertising company in
+                China
+              </p>
               <br />
               <p>My Responsibility:</p>
-              <p> 
-                Implement a website by using Reactjs, TailwindCSS based on the requirments from designer of the Company.
+              <p>
+                Provided troubleshooting and support for desktop computers,
+                printers, and mobile devices, and performed routine maintenance
+                on devices
               </p>
               <br />
               <p>
-                Created reusable React Components, to be used by other team member.
+                Assisted 10+ colleagues with device setup, application
+                configuration, and general troubleshooting.
               </p>
               <br />
               <p>
-                Enhanced user experience and improve the performance of the website.
+                Diagnosed and resolved hardware and software malfunctions
+                efficiently.
               </p>
             </div>
             <hr />
           </li>
-
         </ul>
       </div>
-
-
     </section>
   );
 }
